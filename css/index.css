@@ -1,0 +1,119 @@
+/*base*/
+a{
+    text-decoration: none;
+    color:#333;
+}
+body,html{
+    font-size: 14px;
+    font-family: "Microsoft YaHei",sans-serif;
+    color: #333;
+}
+a:hover{
+    text-decoration: none;
+    color:#333;
+}
+@font-face{
+    font-family: 'wjs';
+    src: url(../fonts/MiFie-Web-Font.eot) format('embedded-opentype'), /* 给IE6-IE8用 */
+    url(../fonts/MiFie-Web-Font.woff) format('woff'), /* 给chrome、firefox用 */
+    url(../fonts/MiFie-Web-Font.ttf) format('truetype'), /* 给chrome、firefox、opera、Safari, Android, iOS 4.2+ 用*/
+    url(../fonts/MiFie-Web-Font.svg) format('svg');
+}
+
+.wjs_icon{
+    font-family: 'wjs';
+}
+
+.wjs_icon_phone::before{
+    content: "\e908";
+}
+.wjs_icon_tel::before{
+    content: "\e909";
+}
+.wjs_icon_logo::before{
+    content: "\e920";
+}
+.wjs_icon_name::before{
+    content: "\e93e";
+}
+.wjs_icon_dollar::before{
+    content: "\e903";
+}
+.wjs_icon_clock::before{
+    content: "\e906";
+}
+.wjs_icon_video::before{
+    content: "\e905";
+}
+
+/*index*/
+.topBar{
+    font-size: 12px;
+    color:#333;
+    height:40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.topBar>.container>.row>div{
+    height: 40px;
+    text-align: center;
+}
+.topBar>.container>.row>div~div{
+    border-left:1px solid #ccc;
+    
+}
+
+.topBar>.container>.row>div> span{
+  
+   
+    line-height: 40px;
+}
+.topBar>.container>.row>div>a>span{
+    
+   
+    line-height: 40px;
+}
+.topBar>.container>.row>div>.logo{
+    display:block;
+    
+    text-align: center;
+    line-height: 40px;
+    
+    position: relative;
+}
+.common,.login{
+    
+    text-align: center;
+    line-height: 40px;
+    
+}
+
+.logo img{
+    display:none;
+    
+    
+}
+
+.logo:hover img{
+    display:block;
+    position: absolute;
+    left: 50%;
+    top:40px;
+    margin-left:-60px;
+    border:1px solid #ccc;
+    border-top:none;
+    z-index:10000;
+
+}
+
+.topBar>.container>.row>div>.btn_wjs{
+    border:none;
+    font-size:12px;
+    color:#fff;
+    background:#e92322;
+    padding:3px 12px;
+    
+}
+.register{
+    margin-left: 10px;
+}
