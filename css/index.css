@@ -233,3 +233,17 @@ a:hover{
   fieldset[disabled] .navbar-wjs .btn-link:focus {
     color: #ccc;
   }
+
+.banner .pc_imgBox{
+    display:block;
+    height:400px;
+    width:100%;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+.banner .m_imgBox{
+    display:block;
+    width:100%;
+}
