@@ -247,3 +247,22 @@ a:hover{
     display:block;
     width:100%;
 }
+
+.media-left .wjs_icon_dollar{
+  font-size:30px;
+  
+}
+
+.info{
+  padding:15px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.info>.container{
+  width:900px;
+}
+
+.info>.container>div a{
+  padding:15px 0;
+  display: block;
+}
