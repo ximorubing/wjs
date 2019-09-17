@@ -106,15 +106,20 @@
     <footer></footer>
     <script src="libs/js/template-web.js"></script>
     <script id="imagetp1" type="text/html">
-      <div class="item active">
-          <a href="#" class="pc_imgBox" style="background-image:url(images/slide_02_2000x410.jpg)"></a>
-          <a href="#" class="m_imgBox"><img src="images/slide_02_640x340.jpg" alt=""></a>
+      {{each list val index}}
+      <div class="item {{index==0?'active':''}}">
+          {{if isMobile}}
+          <a href="#" class="pc_imgBox" style="background-image:url({{val.pcUrl}})"></a>
+          {{else}}
+          <a href="#" class="m_imgBox"><img src="{{val.mUrl}}" alt=""></a>
+          {{/if}}
       </div>
-    
+      {{/each}}
     </script>
     <script id="pointtp2" type="text/html">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      
+      {{each list val index}}
+      <li data-target="#myCarousel" data-slide-to="{{index}}" class="{{index==0?'active':''}}"></li>
+      {{/each}}
     </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="libs/js/jquery-1.12.4.js"></script>
