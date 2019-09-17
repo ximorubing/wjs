@@ -262,7 +262,51 @@ a:hover{
   width:900px;
 }
 
+@media(min-width:768px)and(max-width:992px){
+  .info>.container{
+    width:750px;
+  }
+}
+
 .info>.container>div a{
   padding:15px 0;
   display: block;
+}
+
+.info>.container>div a:hover{
+  color:#e92322;
+}
+
+.book .wjs_icon_clock,.book .wjs_icon_video{
+  font-size:20px;
+}
+
+.book{
+  padding:40px 0;
+  border-bottom: 1px solid #ccc;
+}
+.book .container{
+  width:900px;
+}
+
+@media(min-width:768px)and(max-width:992px){
+  .book .container{
+    width:750px;
+  }
+}
+@media(max-width:768px){
+  .book .container{
+    width:100%;
+  }
+}
+
+.abook{
+  color:#e92322;
+  border-bottom:1px dashed #e92322;
+}
+.abook:hover{
+  color:#e92322;
+}
+.video:hover{
+  color:#e92322;
 }
