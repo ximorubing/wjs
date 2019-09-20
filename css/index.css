@@ -168,9 +168,14 @@ a:hover{
 }
 
 .navbar-wjs {
-    
+    z-index: 999999;
+    background:#fff;
+    width:100%;
     border-bottom: 1px solid #ccc;
     margin:0;
+    border-radius: 0;
+    left:0;
+    top:0;
   }
   .navbar-wjs .navbar-brand {
     color: #777;
