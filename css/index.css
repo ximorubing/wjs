@@ -45,7 +45,56 @@ a:hover{
 .wjs_icon_video::before{
     content: "\e905";
 }
+.wjs_icon_news_01::before {
+  content: "\e90e";
+}
 
+.wjs_icon_news_02::before {
+  content: "\e90f";
+}
+
+.wjs_icon_news_03::before {
+  content: "\e910";
+}
+
+.wjs_icon_news_04::before {
+  content: "\e911";
+}
+.wjs_icon_partner01::before {
+  content: "\e946";
+}
+
+.wjs_icon_partner02::before {
+  content: "\e92f";
+}
+
+.wjs_icon_partner03::before {
+  content: "\e92e";
+}
+
+.wjs_icon_partner04::before {
+  content: "\e92a";
+}
+
+.wjs_icon_partner05::before {
+  content: "\e929";
+}
+
+.wjs_icon_partner06::before {
+  content: "\e931";
+}
+
+.wjs_icon_partner07::before {
+  content: "\e92c";
+}
+
+.wjs_icon_partner08::before {
+  content: "\e92b";
+}
+
+.wjs_icon_partner09::before {
+  content: "\e92d";
+}
 /*index*/
 .topBar{
     font-size: 12px;
@@ -321,7 +370,6 @@ a:hover{
 
 .wjs_product .nav-tabs {
   border:none;
-  margin-top:20px;
   border-bottom: 1px solid #ccc;  
 
 }
@@ -502,4 +550,173 @@ a:hover{
 .productBox .tips .green{
   color:green;
   border:1px solid green;
+}
+
+.wjs_product{
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.wjs_news{
+  padding:40px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.wjs_news .wjs_news_title{
+  font-size:20px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.wjs_news .wjs_news_title::after{
+  content: "";
+  position: absolute;
+  width:6px;
+  height:6px;
+  right: -6px;
+  bottom: -3px;
+  border-radius:50%;
+  border:1px solid #ccc;
+}
+
+.wjs_news .wjs_news_line{
+  border-left:1px dashed #ccc;
+  height:100%;
+  width:1px;
+  position: absolute;
+  left: 45px;
+  top: 0;
+}
+.wjs_news .wjs_icon{
+  font-size:30px;
+  text-align: center;
+  color:#fff;
+}
+
+.wjs_news .nav-tabs {
+  border:0;
+  
+  
+}
+.wjs_news .nav-tabs > li {
+  float: left;
+  
+}
+.wjs_news .nav-tabs > li > a {
+  display: block;
+  width:60px;
+  height: 60px;
+  border-radius: 50%;
+  border:0;
+  background-color:#ccc;
+  margin-bottom:60px;
+  
+}
+@media(min-width:768px) and (max-width:992px){
+.wjs_news .nav-tabs > li > a {
+  margin:30px 50px;
+}
+
+
+}
+@media(max-width:768px){
+  .wjs_news .nav-tabs > li{
+    width:25%;
+  }
+  .wjs_news .nav-tabs > li > a {
+    margin:30px auto;
+  }
+
+}
+.wjs_news .nav-tabs > li:last-child> a{
+  margin-bottom: 0;
+}
+.wjs_news .nav-tabs > li > a:hover {
+  background-color: #ccc;
+}
+.wjs_news .nav-tabs > li.active > a,
+.wjs_news .nav-tabs > li.active > a:hover,
+.wjs_news .nav-tabs > li.active > a:focus {
+  color: #555;
+  cursor: default;
+  background-color: #e92322;
+  border:0;
+  
+}
+.wjs_news .nav-tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+.wjs_news .nav-tabs.nav-justified > li {
+  float: none;
+}
+.wjs_news .nav-tabs.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.wjs_news .nav-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .wjs_news .nav-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .wjs_news .nav-tabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+.wjs_news .nav-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+.wjs_news .nav-tabs.nav-justified > .active > a,
+.wjs_news .nav-tabs.nav-justified > .active > a:hover,
+.wjs_news .nav-tabs.nav-justified > .active > a:focus {
+  border: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+  .wjs_news .nav-tabs.nav-justified > li > a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+  }
+  .wjs_news .nav-tabs.nav-justified > .active > a,
+  .wjs_news .nav-tabs.nav-justified > .active > a:hover,
+  .wjs_news .nav-tabs.nav-justified > .active > a:focus {
+    border-bottom-color: #fff;
+  }
+}
+
+.wjs_news .wjs_news_content{
+  list-style: none;
+
+}
+
+.wjs_news .wjs_news_content>li>a{
+  display:block;
+  color:#555;
+  padding:15px 0;
+
+}
+.wjs_partner{
+  padding:50px 0;
+}
+.wjs_partner ul{
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+.wjs_partner ul>li{
+  display:inline-block;
+  
+}
+
+.wjs_partner ul>li>a{
+  display: block;
+  font-size: 70px;
+  padding:0 15px;
 }
