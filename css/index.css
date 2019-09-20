@@ -310,3 +310,196 @@ a:hover{
 .video:hover{
   color:#e92322;
 }
+.wjs_product{
+  background-color: #f5f5f5;
+}
+
+.wjs_product .nav-tabs-parent{
+  width:100%;
+  overflow: hidden;
+}
+
+.wjs_product .nav-tabs {
+  border:none;
+  margin-top:20px;
+  border-bottom: 1px solid #ccc;  
+
+}
+.wjs_product .nav-tabs > li {
+  float: left;
+  padding:0 10px;
+  
+  margin:0;
+}
+.wjs_product .nav-tabs > li > a {
+  
+  border:0;
+  
+}
+.wjs_product .nav-tabs > li > a:hover {
+  background-color: #f5f5f5;
+  
+}
+.wjs_product .nav-tabs > li.active > a,
+.wjs_product .nav-tabs > li.active > a:hover,
+.wjs_product .nav-tabs > li.active > a:focus {
+  color: #555;
+  cursor: default;
+  background-color: #f5f5f5;
+  border:0;
+  border-bottom:3px solid #e92322;
+ 
+  
+}
+.wjs_product .nav-tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+.wjs_product .nav-tabs.nav-justified > li {
+  float: none;
+  margin:0;
+}
+.wjs_product .nav-tabs.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.wjs_product .nav-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .wjs_product .nav-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .wjs_product .nav-tabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+.wjs_product .nav-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+  
+}
+.wjs_product .nav-tabs.nav-justified > .active > a,
+.wjs_product .nav-tabs.nav-justified > .active > a:hover,
+.wjs_product .nav-tabs.nav-justified > .active > a:focus {
+  border: 1px solid #ddd;
+  border-bottom:3px solid #e92322;
+}
+@media (min-width: 768px) {
+  .wjs_product .nav-tabs.nav-justified > li > a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+  }
+  .wjs_product .nav-tabs.nav-justified > .active > a,
+  .wjs_product .nav-tabs.nav-justified > .active > a:hover,
+  .wjs_product .nav-tabs.nav-justified > .active > a:focus {
+    border-bottom-color: #fff;
+  }
+}
+.productBox{
+  height:150px;
+  width:100%;
+  display:block;
+  margin-top:30px;
+  background-color: #fff;
+  color:#333;
+  box-shadow: 3px 3px 5px #d8d8d8;
+}
+
+.productBox.active{
+  background-color:#e92322;
+  color:#fff;
+
+}
+.productBox.active .pro_right{
+  border-left:1px dashed #fff;
+}
+.productBox .pro_right{
+  width:80px;
+  float:right;
+  height:150px;
+  text-align: center;
+  border-left:1px dashed #ccc;
+  position: relative;
+  
+}
+
+.productBox .pro_right::before,
+.productBox .pro_right::after{
+  content: "";
+  width:12px;
+  height:12px;
+  border-radius: 6px;
+  background:#f5f5f5;
+  position: absolute;
+  left:-6px;
+
+}
+.productBox .pro_right::before{
+  top:-6px;
+  box-shadow: 0 -2px 2px #d8d8d8 inset;
+
+}
+.productBox .pro_right::after{
+  bottom:-6px;
+  box-shadow: 0 2px 2px #d8d8d8 inset;
+
+}
+
+.productBox .pro_left{
+  overflow: hidden;
+
+}
+
+.productBox .pro_left h4{
+  font-size: 16px;
+
+}
+.productBox .pro_right p:first-of-type {
+  margin-top: 25px;
+  color:#e92322;
+}
+.productBox.active .pro_right p:first-of-type{
+  color:#fff;
+
+}
+
+.productBox .pro_right p:first-of-type b{
+    font-size:48px;
+}
+.productBox.pro_right p:first-of-type sub{
+    font-size:12px;
+}
+
+.productBox .pro_left div{
+  font-size: 12px;
+
+}
+
+.productBox .tips{
+  position: absolute;
+  top:10px;
+  left:0;
+  width: 100%;
+}
+.productBox .tips span{
+  width:16px;
+  height:16px;
+  display: inline-block;
+  
+  line-height: 16px;
+  text-align: center;
+
+}
+
+.productBox .tips .red{
+  color:#e92322;
+  border:1px solid #e92322;
+}
+
+.productBox .tips .green{
+  color:green;
+  border:1px solid green;
+}

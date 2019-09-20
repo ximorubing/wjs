@@ -1,6 +1,8 @@
 $(function(){
     
 banner();
+initMobile();
+$('[data-toggle="tooltip"]').tooltip();
 
 });
 
@@ -75,3 +77,24 @@ var banner=function(){
 
     });
 }
+
+var initMobile=function(){
+    var $navTabs=$(".wjs_product .nav-tabs");
+    var $width=0;
+    $navTabs.find("li").each(function(i,item){
+        var $currLi=$(this);
+        var LiWidth=$currLi.outerWidth(true);
+        $width+=LiWidth;
+
+
+    });
+
+    $navTabs.width($width);
+}
+
+new IScroll($(".nav-tabs-parent")[0],{
+    scrollX:true,
+    scrollY:false,
+    click:true
+
+});
